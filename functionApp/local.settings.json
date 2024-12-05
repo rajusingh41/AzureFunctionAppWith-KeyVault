@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "AzureWebJobsStorageConnectionStringValue",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  },
+  "ApiConfig": {
+    "EndpointUrl": "https://test/api",
+    "UserName": "user_Test",
+    "Token": "asdff",
+    "DatabaseAlias": "userfd_Test",
+    "CacheTimeInMinutes": 4,
+    "OtherConfig": {
+      "Token": "xyz"
+    }
+  }
+}

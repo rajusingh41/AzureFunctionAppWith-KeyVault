@@ -18,6 +18,9 @@ namespace functionApp
                  .ConfigureAppConfiguration((context, config) =>
                  {
                      // Get Key Vault URL
+                     config.SetBasePath(Environment.CurrentDirectory)
+                                    .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
+                                    .AddEnvironmentVariables();
                      string keyVaultName = "devKeyVaultDemo";
                      var keyVaultEndpoint = $"https://{keyVaultName}.vault.azure.net/";
                      config.AddAzureKeyVault(new Uri(keyVaultEndpoint),
